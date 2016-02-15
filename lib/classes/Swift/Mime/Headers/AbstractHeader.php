@@ -302,7 +302,7 @@ abstract class Swift_Mime_Headers_AbstractHeader implements Swift_Mime_Header
                 }
                 $value .= $this->getTokenAsEncodedWord($token, $usedLength);
 
-                $header->setMaxLineLength(76); // Forcefully override
+                $header->setMaxLineLength(1000); // Forcefully override
             } else {
                 $value .= $token;
             }
